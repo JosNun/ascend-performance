@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="146.42667"
+   height="98.53936"
+   viewBox="0 0 38.742055 26.071873"
+   version="1.1"
+   id="svg1577"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="graph.svg">
+  <defs
+     id="defs1571">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect2139"
+       is_visible="true"
+       offset_points="4,1.0000008"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect2131"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="76.375127"
+     inkscape:cy="37.23644"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-center="true"
+     inkscape:snap-grids="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid2127"
+       units="px"
+       empspacing="5"
+       gridanglex="60"
+       gridanglez="60"
+       originx="-40.721581"
+       originy="-240.4495" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata1574">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.721583,-30.47864)">
+    <path
+       style="fill:none;stroke:#808080;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 43.30127,51.999993 53.4049,40.02916 62.065155,53.970826 76.883949,33.058327"
+       id="path2191"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:1;fill:#77ee77;fill-opacity:1;fill-rule:nonzero;stroke:#808080;stroke-width:1.16021395;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle2145"
+       cx="62.065155"
+       cy="53.970825"
+       r="1.9995805" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#circle2145"
+       id="use2193"
+       transform="translate(14.818794,-20.912498)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#circle2145"
+       id="use2195"
+       transform="translate(-8.660255,-13.941665)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#circle2145"
+       id="use2197"
+       transform="translate(-18.763885,-1.9708322)"
+       width="100%"
+       height="100%" />
+  </g>
+</svg>
