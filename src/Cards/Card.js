@@ -6,7 +6,7 @@ const StyledCard = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   margin: 10px auto;
-  padding: 10px;
+  padding: 1em;
   height: auto !important;
   
   border: 2px solid #242424;

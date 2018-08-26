@@ -34,11 +34,11 @@ class App extends Component {
         <Navbar />
         <Header />
         <CardSlider>
-          <Card headImage={graphImg} >
-            Ascend Performance uses the latest in performance tracking technology, enabling you to track your workouts, and synchronize them effortlessly across all of your devices.
-          </Card>
           <Card headImage={clockImg}>
             By using state of the art technology and AI, Ascend personalizes your workouts to maximize gain and save you time.
+          </Card>
+          <Card headImage={graphImg} >
+            Ascend Performance uses the latest in performance tracking technology, enabling you to track your workouts, and synchronize them effortlessly across all of your devices.
           </Card>
           <Card headImage={infiniteImg}>
             Workout sharing enables a bit of friendly competition which has been proven to boost motivation and workout efficiency
