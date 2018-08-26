@@ -6,10 +6,12 @@ import workout from '../assets/images/workout.jpg';
 const StyledHeader = styled.div`
   position: relative;
   overflow: hidden;
+  max-height: 500px;
 `;
 
 const HeaderImage = styled.img`
   display: block;
+  margin-top: -15%;
   max-width: 100%;
   
   transform: scale(1.02);
@@ -40,6 +42,10 @@ const HeaderCallout = styled.h3`
   text-align: center;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
   transform: translate(-50%, -50%);
+  
+  @media screen and (min-width: 512px) {
+    font-size: 2.5em;
+  }
 `
 
 export default () => {
