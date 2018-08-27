@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import Swiper from 'react-id-swiper/lib/custom';
 
@@ -11,7 +11,6 @@ const SliderContainer = styled.div`
 `;
 
 export default props => {
-  
   const params = {
     slidesPerView: 3,
     initialSlide: 1,
@@ -26,15 +25,13 @@ export default props => {
         slidesPerView: 1.5,
         loopedSlides: props.children.length,
         loop: true,
-      }
-    }
-  }
-  
+      },
+    },
+  };
+
   return (
     <SliderContainer>
-      <Swiper {...params}>
-        {props.children}
-      </Swiper>
+      <Swiper {...params}>{props.children}</Swiper>
     </SliderContainer>
-  )
-}
+  );
+};

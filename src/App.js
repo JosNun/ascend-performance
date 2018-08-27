@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import 'typeface-pt-sans';
 
+import './App.css';
+
 import Navbar from './Nav/Nav';
-import Home from './Home/Home'
+import Home from './Home/Home';
 import About from './About/About';
 
 const Body = styled.div`
@@ -12,7 +14,7 @@ const Body = styled.div`
 
   color: #808080;
   font-family: 'PT Sans';
-`
+`;
 
 class App extends Component {
   render() {
@@ -20,7 +22,7 @@ class App extends Component {
       <Router>
         <Body>
           <Navbar />
-          
+
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
         </Body>

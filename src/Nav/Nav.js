@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 import Logo from '../assets/images/icons/logo.svg';
@@ -10,10 +10,10 @@ const StyledNavbar = styled.nav`
   right: 0;
   left: 0;
   height: 50px;
-  
+
   display: flex;
   align-items: center;
-  
+
   background-color: #242424;
   z-index: 500;
 `;
@@ -24,18 +24,16 @@ const StyledHamburger = styled.img`
 
   margin-right: 15px;
   margin-left: auto;
-`
+`;
 
 const StyledLogo = styled.img`
   margin-left: 15px;
   height: 34px;
-`
+`;
 
-export default () => {
-  return (
-    <StyledNavbar>
-      <StyledLogo src={Logo} />
-      <StyledHamburger src={Hamburger} />
-    </StyledNavbar>
-  )
-}
+export default () => (
+  <StyledNavbar>
+    <StyledLogo src={Logo} />
+    <StyledHamburger src={Hamburger} />
+  </StyledNavbar>
+);
