@@ -17,6 +17,12 @@
         ]
       }
     ],
+    "react/jsx-one-expression-per-line": [
+      0,
+      {
+        "allow": "single-child"
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
