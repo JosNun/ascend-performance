@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import Logo from '../assets/images/icons/logo.svg';
 import Hamburger from '../assets/images/icons/hamburger.svg';
@@ -33,7 +34,9 @@ const StyledLogo = styled.img`
 
 export default () => (
   <StyledNavbar>
-    <StyledLogo src={Logo} />
+    <Link to="/">
+      <StyledLogo src={Logo} />
+    </Link>
     <StyledHamburger src={Hamburger} />
   </StyledNavbar>
 );
