@@ -20,8 +20,9 @@ export default () => (
     <Subheader>Sorry to disappoint but...</Subheader>
     <ModernHeader>Ascend doesn’t exist!</ModernHeader>
     <p>
-      Ascend was just a demo project I built for experience and to expand{' '}
-      <a href="https://josnun.github.io">my portfolio.</a>
+      Perhaps I made the site a bit too convincing, but Ascend is a fictitious
+      company. The webpage is only an example project I built for experience and
+      to expand <a href="https://josnun.github.io">my portfolio.</a>
     </p>
 
     <p>
