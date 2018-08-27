@@ -6,6 +6,7 @@ import TextView from '../common/TextView';
 const Subheader = styled.h3`
   margin-top: calc(50px + 1em);
   margin-bottom: 0.1em;
+  text-align: center;
 `;
 
 const ModernHeader = styled.h1`
