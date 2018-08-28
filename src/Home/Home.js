@@ -17,7 +17,7 @@ const BodyHeader = styled.h1`
   text-align: center;
 `;
 
-export default () => (
+export default ({ history }) => (
   <React.Fragment>
     <Header />
     <CardSlider>
@@ -43,7 +43,13 @@ export default () => (
     </TextView>
 
     <BodyHeader>Join the Revolution</BodyHeader>
-    <TextInput placeholder="Enter your email..." />
+    <TextInput
+      placeholder="Enter your email..."
+      submitHandler={e => {
+        e.preventDefault();
+        history.push('/about');
+      }}
+    />
     <Footer />
   </React.Fragment>
 );
