@@ -17,11 +17,51 @@ const Body = styled.div`
 `;
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      isNavOpen: false,
+    };
+
+    this.openNav = this.openNav.bind(this);
+    this.closeNav = this.closeNav.bind(this);
+    this.toggleNav = this.toggleNav.bind(this);
+  }
+
+  openNav() {
+    this.setState({
+      isNavOpen: true,
+    });
+  }
+
+  closeNav() {
+    this.setState({
+      isNavOpen: false,
+    });
+  }
+
+  toggleNav() {
+    const { isNavOpen } = this.state;
+    this.setState({
+      isNavOpen: !isNavOpen,
+    });
+  }
+
   render() {
+    const { isNavOpen } = this.state;
+
     return (
       <Router>
         <Body>
-          <Navbar />
+          <Navbar
+            navFunctions={{
+              toggleNav: this.toggleNav,
+              openNav: this.openNav,
+              closeNav: this.closeNav,
+            }}
+            isNavOpen={isNavOpen}
+          />
 
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
