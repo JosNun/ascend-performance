@@ -51,7 +51,7 @@ const NavElement = styled(NavLink)`
     margin-bottom: 1em;
   }
 
-  &:before {
+  &.active:before {
     content: '';
     display: block;
     position: absolute;
@@ -61,15 +61,9 @@ const NavElement = styled(NavLink)`
     height: 0.5em;
 
     background-color: #77ee77;
-    opacity: 0;
-    transform: translateY(-50%) rotate(45deg) scale(0);
+    transform: translateY(-50%) rotate(45deg);
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &.active:before {
-    opacity: 1;
-    transform: translateY(-50%) rotate(45deg) scale(1);
   }
 `;
 
