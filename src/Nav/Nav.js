@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,14 @@ const StyledNavbar = styled.nav`
   align-items: center;
 
   background-color: #242424;
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.5);
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 500;
+
+  &.docked {
+    box-shadow: none;
+  }
 `;
 
 const StyledHamburger = styled.img`
@@ -42,18 +49,56 @@ const StyledLogo = styled.img`
   height: 34px;
 `;
 
-export default ({ navFunctions, isNavOpen }) => (
-  <React.Fragment>
-    <StyledNavbar>
-      <Link to="/">
-        <StyledLogo src={Logo} />
-      </Link>
-      <StyledHamburger
-        className={isNavOpen ? 'active' : ''}
-        src={Hamburger}
-        onClick={navFunctions.toggleNav}
-      />
-    </StyledNavbar>
-    <NavMenu isNavOpen={isNavOpen} navFunctions={navFunctions} />
-  </React.Fragment>
-);
+class Nav extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      isNavDocked: true,
+    };
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 5 && this.state.isNavDocked) {
+      this.setState({
+        isNavDocked: false,
+      });
+    } else if (scrollTop <= 5 && !this.state.isNavDocked) {
+      this.setState({
+        isNavDocked: true,
+      });
+    }
+  }
+
+  render() {
+    const { isNavOpen, navFunctions } = this.props;
+    return (
+      <React.Fragment>
+        <StyledNavbar className={this.state.isNavDocked ? 'docked' : ''}>
+          <Link to="/">
+            <StyledLogo src={Logo} />
+          </Link>
+          <StyledHamburger
+            className={isNavOpen ? 'active' : ''}
+            src={Hamburger}
+            onClick={navFunctions.toggleNav}
+          />
+        </StyledNavbar>
+        <NavMenu isNavOpen={isNavOpen} navFunctions={navFunctions} />
+      </React.Fragment>
+    );
+  }
+}
+
+export default Nav;
