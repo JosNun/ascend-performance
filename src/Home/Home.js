@@ -6,7 +6,6 @@ import Card from '../Cards/Card';
 import CardSlider from '../Cards/CardSlider';
 import TextView from '../common/TextView';
 import TextInput from '../common/TextInput';
-import Footer from '../common/Footer';
 
 import graphImg from '../assets/images/icons/graph.svg';
 import clockImg from '../assets/images/icons/clock.svg';
@@ -50,6 +49,5 @@ export default ({ history }) => (
         history.push('/about');
       }}
     />
-    <Footer />
   </React.Fragment>
 );

@@ -8,9 +8,15 @@ import './App.css';
 import Navbar from './Nav/Nav';
 import Home from './Home/Home';
 import About from './About/About';
+import Footer from './common/Footer';
 
 const Body = styled.div`
+  min-height: 100%;
+
   margin-top: 50px;
+
+  /* Footer height + margin */
+  margin-bottom: calc(50px + 15px);
 
   color: #808080;
   font-family: 'PT Sans';
@@ -50,7 +56,6 @@ class App extends Component {
 
   render() {
     const { isNavOpen } = this.state;
-
     return (
       <Router>
         <Body>
@@ -65,6 +70,7 @@ class App extends Component {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Footer updateMe={Math.random()} />
         </Body>
       </Router>
     );
