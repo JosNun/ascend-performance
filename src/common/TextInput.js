@@ -45,6 +45,7 @@ const Button = styled.input.attrs({
   bottom: 0;
 
   width: 20%;
+  max-width: 300px;
 
   background-color: #7e7;
   border: 2px solid #242424;
