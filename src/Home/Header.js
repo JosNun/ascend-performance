@@ -50,7 +50,7 @@ const HeaderCallout = styled.h3`
 
 export default () => (
   <StyledHeader>
-    <HeaderImage src={workout} />
+    <HeaderImage src={workout} rel="preload" />
     <Overlay />
     <HeaderCallout>
       Enabling{' '}

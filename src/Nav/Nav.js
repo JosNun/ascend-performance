@@ -93,7 +93,7 @@ class Nav extends Component {
           {/* This goes first so we can use the sibling selector to set the z-index of the other elements */}
           <NavMenu isNavOpen={isNavOpen} navFunctions={navFunctions} />
           <Link to="/">
-            <StyledLogo src={Logo} />
+            <StyledLogo src={Logo} rel="preload" />
           </Link>
           <StyledHamburger
             className={isNavOpen ? 'active' : ''}
