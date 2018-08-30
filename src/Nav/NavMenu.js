@@ -3,16 +3,16 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavContainer = styled.div`
-  position: fixed;
-  top: 50px;
-  left: 0;
-  right: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @media screen and (max-width: 424px) {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-color: #242424;
     opacity: 0;
     transform: translateY(-50%);
@@ -45,14 +45,10 @@ const NavContainer = styled.div`
   }
 
   @media screen and (min-width: 425px) {
-    position: absolute;
-    display: flex;
-    top: 0;
-    right: 15px;
-    height: 100%;
+    margin-left: 1em;
 
     flex-direction: row;
-    justify-content: flex-end;
+    order: 2;
 
     background-color: transparent;
     opacity: 1;
@@ -70,6 +66,16 @@ const NavElement = styled(NavLink)`
   font-size: 1.2em;
 
   @media screen and (min-width: 425px) {
+    color: #808080;
+    display: inline-block;
+    width: 3em;
+
+    text-align: center;
+
+    &.active {
+      font-weight: 700;
+    }
+
     &:before {
       content: '';
       display: block;
@@ -77,7 +83,7 @@ const NavElement = styled(NavLink)`
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 0.15em;
+      height: 0.1em;
 
       background-color: #77ee77;
       transform: scaleX(0);
