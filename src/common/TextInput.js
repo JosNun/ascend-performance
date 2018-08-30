@@ -5,6 +5,7 @@ const InputWithButton = styled.form`
   position: relative;
   width: 80%;
   height: 20px;
+  max-width: 20em;
 
   margin: 10px auto;
   padding: 2.5px;
@@ -45,7 +46,6 @@ const Button = styled.input.attrs({
   bottom: 0;
 
   width: 20%;
-  max-width: 300px;
 
   background-color: #7e7;
   border: 2px solid #242424;
