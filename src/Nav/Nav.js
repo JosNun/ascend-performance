@@ -42,6 +42,10 @@ const StyledHamburger = styled.img`
   &.active {
     transform: rotate(45deg);
   }
+
+  @media screen and (min-width: 425px) {
+    display: none;
+  }
 `;
 
 const StyledLogo = styled.img`
@@ -86,6 +90,8 @@ class Nav extends Component {
     return (
       <React.Fragment>
         <StyledNavbar className={this.state.isNavDocked ? 'docked' : ''}>
+          {/* This goes first so we can use the sibling selector to set the z-index of the other elements */}
+          <NavMenu isNavOpen={isNavOpen} navFunctions={navFunctions} />
           <Link to="/">
             <StyledLogo src={Logo} />
           </Link>
@@ -95,7 +101,6 @@ class Nav extends Component {
             onClick={navFunctions.toggleNav}
           />
         </StyledNavbar>
-        <NavMenu isNavOpen={isNavOpen} navFunctions={navFunctions} />
       </React.Fragment>
     );
   }
