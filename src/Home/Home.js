@@ -42,12 +42,36 @@ export default ({ history }) => (
     </TextView>
 
     <BodyHeader>Join the Revolution</BodyHeader>
-    <TextInput
-      placeholder="Enter your email..."
-      submitHandler={e => {
+    <form
+      onSubmit={e => {
         e.preventDefault();
+
+        const form = e.target;
+        const url = form.action;
+
+        const formInputs = Array.from(form.elements);
+
+        const payload = formInputs.reduce((acc, el) => {
+          const val = encodeURIComponent(el.value);
+          const name = el.name;
+
+          if (!name || !val) {
+            return acc;
+          }
+
+          return (acc += `${name}=${val}&`);
+        }, '');
+
+        fetch(url, {
+          method: 'POST',
+          body: payload,
+        });
+
         history.push('/about');
       }}
-    />
+      netlify="true"
+    >
+      <TextInput name="email" placeholder="Enter your email..." />
+    </form>
   </React.Fragment>
 );

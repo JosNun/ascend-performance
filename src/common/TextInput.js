@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const InputWithButton = styled.form`
+const InputWithButton = styled.div`
   position: relative;
   width: 80%;
   height: 20px;
@@ -61,9 +61,9 @@ const Button = styled.input.attrs({
   }
 `;
 
-export default ({ placeholder, submitHandler }) => (
-  <InputWithButton onSubmit={submitHandler}>
-    <TextBox placeholder={placeholder} type="email" required />
+export default ({ placeholder, name }) => (
+  <InputWithButton>
+    <TextBox placeholder={placeholder} name={name} type="email" required />
     <Button value="Join" />
   </InputWithButton>
 );
