@@ -69,8 +69,10 @@ export default ({ history }) => (
 
         history.push('/about');
       }}
+      name="test-form"
       netlify="true"
     >
+      <input type="hidden" name="form-name" value="test-form" />
       <TextInput name="email" placeholder="Enter your email..." />
     </form>
   </React.Fragment>
