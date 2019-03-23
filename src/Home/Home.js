@@ -62,15 +62,16 @@ export default ({ history }) => (
           return (acc += `${name}=${val}&`);
         }, '');
 
-        fetch(url, {
+        fetch('/', {
           method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
           body: payload,
         });
 
         history.push('/about');
       }}
-      name="test-form"
-      netlify="true"
     >
       <input type="hidden" name="form-name" value="test-form" />
       <TextInput name="email" placeholder="Enter your email..." />
